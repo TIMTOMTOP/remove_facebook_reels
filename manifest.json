@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Remove Facebook Reels",
+    "version": "1.0",
+    "description": "Removes the Reels section from Facebook.",
+    "permissions": ["scripting"],
+    "host_permissions": ["https://www.facebook.com/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.facebook.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
